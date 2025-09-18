@@ -1,50 +1,115 @@
-<html>
-  <head>
-    <title>Facebook Login</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login Page</title>
+  <style>
+    body {
+      background-color: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Helvetica, Arial, sans-serif;
+    }
 
-	  <body bgcolor="#f2f2f2">
-  <table border="0">
-    <tr>
-      <td>
-        <div align="left" class="logo-area">
-          <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" height="106px">
-          <h2>Facebook helps you connect and share with the people in your life.</h2>
-        </div>
-      </td>
-      <td width="50%">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <center>
-          <div class="form" align="center">
-            <br>
-            <center><input type="text" placeholder="Enter Address or Phone Number"></center><br>
-            <center><input type="Password" placeholder="Password"></center>
-            <br>
-            <center><button><b>Log In</b></button></center>
-            <br>
-            <center><a href="#">Forgotten password?</a></center>
-            <br><br>
-            <hr>
-            <br>
-            <center><button id="new"><b>Create Account</b></button></center>
-            <br>
-            <center>
-              <p><b><a href="#" style="color: #000;">Create a Page</a></b> for a celebrity, band or business.</p>
-            </center>
-          </div>
-        </center>
-        <br>
-        <br>
-      </td>
-    </tr>
-  </table>
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+
+    /* Left Section */
+    .left {
+      width: 450px;
+      margin-top: 70px;
+      display: inline-block;
+    }
+
+    .left img {
+      width: 250px;
+    }
+
+    .left p {
+      font-size: 24px;
+      color: #1c1e21;
+      margin-top: -10px;
+    }
+
+    /* Right Section */
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 300px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    form input {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    form button {
+      background-color: #1877f2;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    form a {
+      text-decoration: none;
+      color: #1877f2;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .signup {
+      background-color: #42b72a;
+      border-radius: 5px;
+      padding: 12px 20px;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left">
+       <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" height="106px">
+          <h2>Facebook helps you  connect and share with the people in your life<h2>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+      <form>
+        <input type="text" id="email" placeholder="Email address or phone number">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit">Log in</button>
+        <a href="#">Forgotten account?</a>
+      </form>
+      <button class="signup">Create new account</button>
+    </div>
+  </div>
 </body>
-  </body>
 </html>
