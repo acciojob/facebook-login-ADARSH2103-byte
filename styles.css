@@ -1,81 +1,90 @@
 /*  your css code here. If applicable */
-body{
-	background-color:#f6f6f6
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	height:100vh;
-	font-family:Arial,sans-serif;
-}
-.left{
-	width:450px;
-	margin-top:70px;
-	display:inline-block;
-}
-.left img{
-	width:450px;
-	margin-bottom:20px;
-}
-.left p{
-	font-size:20px;
-	color:#1c1e21;
-	
-}
-.right{
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	gap:15px
-	
+*{
+  font-family: Helvetica !important;
 }
 
-form{
-	display:flex;
-	flex-direction:column;
-	gap:10px;
-	width:300px;
-	background-color:#fff;
-	padding:20px;
-	border-radius:5px;
-	box-shadow:0 0 10px #ccc;
-	
-}
-form input{
-	border:1px solid #ccc;
-	border-radius:5px;
-	padding:10px;
-}
-form button{
-	background-color:#1877f2;
-	color:#fff;
-	border:none;
-	border-radius:5px;
-
-	padding:10px 20px;
-	width:100%;
-	font-size:16px;
-	cursor:pointer;
-	
-}
-form a{
-	color:#1877f2;
-	text-decoration:none;
-	font-size:14px;
-	text-align:center;
-	margin-top:5px;
-}
-.signup {
-	background-color:#42b72a;
-	color:#fff;
-	border:none;
-	border-radius:5px;
-	padding:10px 20px;
-	font-size:16px;
-	cursor:pointer;
-	width:200px;
-	
-
-
-	
+.logo-area img{
+	margin: inherit;
 }
 
+.logo-area{
+	margin-left: 75px;
+	margin-top: 15px;
+}
+
+.logo-area h2{
+	margin-left: 105px;
+	font-family: Helvetica;
+	font-size: 28px;
+	margin-top: -15px;
+	font-weight: normal;
+	color: #363636;
+}
+
+.form{
+	background-color: #fff;
+	border-radius: 5px;
+	height: 369px;
+	width: 60%;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 5px rgba(173, 173, 173,.75)
+}
+
+.form input{
+	width: 89%;
+	height: 46px;
+	padding: 0px 0px 0px 10px;
+	font-size: 16px;
+	border-color: #d1d1d1;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	caret-color: #0373fc;
+	outline-color: #0373fc;
+}
+
+.form button{
+	width: 92%;
+	height: 46px;
+	background-color: #0373fc;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	outline:none;
+}
+
+.form button:hover{
+	background-color: #0263d9;
+	cursor: pointer;
+}
+
+.form a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #009ef2;
+}
+
+.form a:hover{
+	text-decoration: underline;
+}
+
+.form hr{
+	width: 90%;
+	border: 1px solid;
+	border-color: #d9d9d9;
+}
+
+.form #new{
+	background-color: #00cc58;
+	width: 65%;
+}
+
+.form p{
+	font-size: 14px;
+}
+
+.form #new:hover{
+	background-color: #02ba51;
+}
